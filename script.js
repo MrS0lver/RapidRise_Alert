@@ -1,16 +1,17 @@
-// Handling the subscription form submission
-document.getElementById('alert-form').addEventListener('submit', function(event) {
-  event.preventDefault();
+document.addEventListener("DOMContentLoaded", () => {
+    const registerButton = document.getElementById("registerButton");
+    const modal = document.getElementById("modal");
+    const closeModal = document.getElementById("closeModal");
 
-  const name = document.getElementById('name').value.trim();
-  const phone = document.getElementById('phone').value.trim();
+    // Show Modal
+    registerButton.addEventListener("click", () => {
+        modal.classList.add("show");
+        document.body.classList.add("blur-background");
+    });
 
-  if (name && phone) {
-      alert(`Thank you, ${name}! You've been subscribed to flood alerts.`);
-      // Clear input fields
-      document.getElementById('name').value = '';
-      document.getElementById('phone').value = '';
-  } else {
-      alert('Please fill in all fields.');
-  }
+    // Close Modal
+    closeModal.addEventListener("click", () => {
+        modal.classList.remove("show");
+        document.body.classList.remove("blur-background");
+    });
 });
