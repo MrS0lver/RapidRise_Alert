@@ -3,57 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RapidRise Alert</title>
+    <title>Modern Registration Page</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="logo">🌊 RapidRise Alert</h1>
-            <p>Be prepared. Stay safe. Instant flood alerts for your community.</p>
-            <a href="#register" class="cta-button">Get Started</a>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to RapidRise</h1>
+            <p>Your gateway to smart alerts and seamless registration!</p>
+            <button id="registerButton" class="btn-primary">Get Started</button>
         </div>
     </header>
 
-    <main>
-        <section id="intro">
-            <div class="content">
-                <h2>Why Choose RapidRise?</h2>
-                <p>Protect your loved ones with real-time alerts tailored to your location. Empower communities to act promptly during flash floods.</p>
+    <!-- Why RapidRise Section -->
+    <section id="why-rapidrise">
+        <h2>Why Choose RapidRise?</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>🚀 Instant Updates</h3>
+                <p>Stay ahead with real-time alerts tailored to your needs.</p>
             </div>
-        </section>
-
-        <section id="features">
-            <h2>Features</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>Real-Time Alerts</h3>
-                    <p>Stay updated with accurate and instant notifications during severe weather.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Localized Updates</h3>
-                    <p>Receive warnings specific to your region to maximize safety.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Data-Driven Insights</h3>
-                    <p>Powered by advanced weather analysis and forecasting systems.</p>
-                </div>
+            <div class="card">
+                <h3>💡 Smart Insights</h3>
+                <p>Gain knowledge and make informed decisions effortlessly.</p>
             </div>
-        </section>
+            <div class="card">
+                <h3>🔒 Secure Platform</h3>
+                <p>Your data is safe with our advanced security measures.</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="register">
-            <h2>Register for Alerts</h2>
+    <!-- Registration Modal -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Register Now</h2>
             <form id="registrationForm">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="tel" id="phone" placeholder="Phone Number" required>
-                <button type="submit">Subscribe</button>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone" required>
+                <input type="text" placeholder="Location" required>
+                <button type="submit" class="btn-submit">Submit</button>
             </form>
-        </section>
-    </main>
+            <button id="closeModal" class="btn-close">Close</button>
+        </div>
+    </div>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 RapidRise Alert. All rights reserved.</p>
+        <p>&copy; 2024 RapidRise. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
