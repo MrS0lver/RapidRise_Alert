@@ -1,61 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Registration Page</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RapidRise Alert</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Welcome to RapidRise</h1>
-            <p>Your gateway to smart alerts and seamless registration!</p>
-            <button id="registerButton" class="btn-primary">Get Started</button>
-        </div>
-    </header>
+  <div class="background">
+    <!-- Background stars & plants -->
+    <div class="stars"></div>
+    <div class="plants"></div>
+  </div>
 
-    <!-- Why RapidRise Section -->
-    <section id="why-rapidrise">
-        <h2>Why Choose RapidRise?</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>🚀 Instant Updates</h3>
-                <p>Stay ahead with real-time alerts tailored to your needs.</p>
-            </div>
-            <div class="card">
-                <h3>💡 Smart Insights</h3>
-                <p>Gain knowledge and make informed decisions effortlessly.</p>
-            </div>
-            <div class="card">
-                <h3>🔒 Secure Platform</h3>
-                <p>Your data is safe with our advanced security measures.</p>
-            </div>
-        </div>
-    </section>
+  <!-- Header Section -->
+  <header class="header">
+    <h1>RapidRise Alert</h1>
+    <p>Be prepared. Stay safe. Instant flood alerts for your community.</p>
+    <button class="btn btn-3d">Get Started</button>
+  </header>
 
-    <!-- Registration Modal -->
-    <div id="modal" class="modal hidden">
-        <div class="modal-content">
-            <h2>Register Now</h2>
-            <form id="registrationForm">
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <input type="tel" placeholder="Phone" required>
-                <input type="text" placeholder="Location" required>
-                <button type="submit" class="btn-submit">Submit</button>
-            </form>
-            <button id="closeModal" class="btn-close">Close</button>
-        </div>
-    </div>
+  <!-- Why Choose Section -->
+  <section class="why-choose">
+    <h2>Why Choose RapidRise?</h2>
+    <p>
+      Protect your loved ones with real-time alerts tailored to your location. Empower communities to act promptly during flash floods.
+    </p>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 RapidRise. All Rights Reserved.</p>
-    </footer>
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Features</h2>
+    <ul>
+      <li><strong>Real-Time Alerts:</strong> Stay updated with accurate and instant notifications during severe weather.</li>
+      <li><strong>Localized Updates:</strong> Receive warnings specific to your region to maximize safety.</li>
+      <li><strong>Data-Driven Insights:</strong> Powered by advanced weather analysis and forecasting systems.</li>
+    </ul>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Registration Section -->
+  <section class="register-alerts">
+    <h2>Register for Alerts</h2>
+    <form id="alert-form">
+      <input type="text" id="name" placeholder="Your Name" class="input-3d" required>
+      <input type="tel" id="phone" placeholder="Phone Number" class="input-3d" required>
+      <button type="submit" class="btn btn-3d">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Stay Safe. Stay Informed.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

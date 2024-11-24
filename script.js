@@ -1,17 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const registerButton = document.getElementById("registerButton");
-    const modal = document.getElementById("modal");
-    const closeModal = document.getElementById("closeModal");
+// Handling the subscription form submission
+document.getElementById('alert-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  const name = document.getElementById('name').value;
+  const phone = document.getElementById('phone').value;
 
-    // Show Modal
-    registerButton.addEventListener("click", () => {
-        modal.classList.add("show");
-        document.body.classList.add("blur-background");
-    });
-
-    // Close Modal
-    closeModal.addEventListener("click", () => {
-        modal.classList.remove("show");
-        document.body.classList.remove("blur-background");
-    });
+  if (name && phone) {
+    alert(`Thank you, ${name}! You've been subscribed to flood alerts.`);
+    // Clear input fields
+    document.getElementById('name').value = '';
+    document.getElementById('phone').value = '';
+  } else {
+    alert('Please fill in all fields.');
+  }
 });
