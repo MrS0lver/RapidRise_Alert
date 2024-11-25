@@ -8,6 +8,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <form id="alert-form" method="POST" action="/submit">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter your location" required>
+    
+        <button type="submit">Submit</button>
+    </form>    
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content">
@@ -57,21 +72,5 @@
     </footer>
 
   <script src="script.js"></script>
-  <form id="alert-form">
-    <label for="name">Name:</label>
-    <input type="text" id="name" placeholder="Enter your name" required>
-    
-    <label for="phone">Phone:</label>
-    <input type="text" id="phone" placeholder="Enter your phone" required>
-    
-    <label for="email">Email:</label>
-    <input type="email" id="email" placeholder="Enter your email" required>
-    
-    <label for="location">Location:</label>
-    <input type="text" id="location" placeholder="Enter your location" required>
-    
-    <button type="submit">Submit</button>
-  </form>
-  
 </body>
 </html>
